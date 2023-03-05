@@ -1,0 +1,16 @@
+{
+	"destination": [
+		{
+			"id": 1,
+			"name": "Warsaw"
+		},
+		{
+			"id": 1,
+			"name": "Lodz"
+		},
+		{
+			"id": 1,
+			"name": "Krakow"
+		}
+	]
+}
