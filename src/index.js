@@ -18,7 +18,7 @@ myIcon.src = Icon;
 document.querySelector("div").append(myIcon);
 document.querySelector("div").classList.add("change");
 
-fetch("destination.json")
+fetch("https://raw.githubusercontent.com/Lukasz-Szumski/reservation/main/endpoints/destination.json")
 	.then(res => res.json()) // Transform the data into text
 	.then(data => {
 		console.log(data);
