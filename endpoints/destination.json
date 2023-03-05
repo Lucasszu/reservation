@@ -2,15 +2,21 @@
 	"destination": [
 		{
 			"id": 1,
-			"name": "Warsaw"
+			"value": "warsaw",
+			"desc": "Warszawa",
+			"code": "wrw"
 		},
 		{
 			"id": 2,
-			"name": "Lodz"
+			"value": "paris",
+			"desc": "Paryż",
+			"code": "par"
 		},
 		{
 			"id": 3,
-			"name": "Krakow"
+			"value": "krakow",
+			"desc": "Kraków",
+			"code": "krk"
 		}
 	]
 }

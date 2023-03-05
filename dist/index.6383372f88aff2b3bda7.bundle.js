@@ -150,9 +150,20 @@ heading.innerText = "10+10= ".concat(sumValue);
 var myIcon = new Image();
 myIcon.src = _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__;
 document.querySelector("div").append(myIcon);
-document.querySelector('div').classList.add("change");
+document.querySelector("div").classList.add("change");
+fetch("https://raw.githubusercontent.com/Lukasz-Szumski/reservation/main/endpoints/destination.json").then(function (res) {
+  return res.json();
+}) // Transform the data into text res.text
+.then(function (data) {
+  data.destination.forEach(function (element) {
+    console.log(element);
+  });
+  // console.log(data);
+})["catch"](function (err) {
+  return console.log(err);
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.bed725c7213dbe99bf77.bundle.js.map
+//# sourceMappingURL=index.6383372f88aff2b3bda7.bundle.js.map
