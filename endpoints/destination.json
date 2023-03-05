@@ -20,12 +20,24 @@
 		}
 	],
 
-    "origin":[
-        {
-            "id":1,
-            "value": "wroclaw",
-            "desc":"Wrocław",
-            "code":"wro"
-        }
-    ]
+	"origin": [
+		{
+			"id": 1,
+			"value": "krakow",
+			"desc": "Kraków",
+			"code": "krk"
+		},
+		{
+			"id": 2,
+			"value": "warsaw",
+			"desc": "Warszawa",
+			"code": "wrw"
+		},
+		{
+			"id": 3,
+			"value": "wroclaw",
+			"desc": "Wrocław",
+			"code": "wro"
+		}
+	]
 }

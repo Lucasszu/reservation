@@ -151,14 +151,22 @@ var myIcon = new Image();
 myIcon.src = _assets_img_proba_png__WEBPACK_IMPORTED_MODULE_2__;
 document.querySelector("div").append(myIcon);
 document.querySelector("div").classList.add("change");
-
-// const destination = document.getElementById("destination");
-// var value = destination.options[select.selectedIndex].value;
-// console.log(value); // warsaw
 fetch("https://raw.githubusercontent.com/Lukasz-Szumski/reservation/main/endpoints/destination.json").then(function (res) {
   return res.json();
 }) // Transform the data into text res.text
 .then(function (data) {
+  data.origin.forEach(function (element) {
+    var origin = document.getElementById("origin");
+    var option = document.createElement("option");
+    option.value = element.value;
+    console.log(element);
+    // console.log(option.value);
+    option.textContent = element.desc;
+    origin.appendChild(option);
+
+    // console.log(element);
+  });
+}).then(function (data) {
   data.destination.forEach(function (element) {
     var destination = document.getElementById("destination");
     var option = document.createElement("option");
@@ -174,17 +182,8 @@ fetch("https://raw.githubusercontent.com/Lukasz-Szumski/reservation/main/endpoin
 })["catch"](function (err) {
   return console.log(err);
 });
-
-// function addOptions() {
-// 	const destination = document.getElementById("destination");
-//
-// 	option.value = "hand";
-// 	console.log(option.value);
-// 	option.text = "Hand";
-// 	x.add(option);
-// }
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.ab36bcd9cf807dda49d2.bundle.js.map
+//# sourceMappingURL=index.8ac16e660521591c9235.bundle.js.map

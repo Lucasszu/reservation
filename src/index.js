@@ -23,28 +23,32 @@ fetch("https://raw.githubusercontent.com/Lukasz-Szumski/reservation/main/endpoin
 	.then(data => {
 		data.origin.forEach(element => {
 			const origin = document.getElementById("origin");
-			const option = document.createElement("option");
-			option.value = element.value;
+			const optionOrigin = document.createElement("option");
+			optionOrigin.value = element.value;
 			console.log(element);
 			// console.log(option.value);
-			option.textContent = element.desc;
+			optionOrigin.textContent = element.desc;
 			origin.appendChild(option);
 
 			// console.log(element);
 		});
-	})
-	.then(data => {
 		data.destination.forEach(element => {
 			const destination = document.getElementById("destination");
-			const option = document.createElement("option");
-			option.value = element.value;
+			const optionDestination = document.createElement("option");
+			optionDestination.value = element.value;
 			console.log(element);
 			// console.log(option.value);
-			option.textContent = element.desc;
+			optionDestination.textContent = element.desc;
 			destination.appendChild(option);
+
+			if (optionOrigin === optionDestination) {
+				optionDestination.setAttribute("disabled");
+			}
 
 			// console.log(element);
 		});
-		// console.log(data);
 	})
+
+	// console.log(data);
+
 	.catch(err => console.log(err));
