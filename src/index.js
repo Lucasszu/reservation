@@ -18,17 +18,27 @@ myIcon.src = Icon;
 document.querySelector("div").append(myIcon);
 document.querySelector("div").classList.add("change");
 
-// const destination = document.getElementById("destination");
-// var value = destination.options[select.selectedIndex].value;
-// console.log(value); // warsaw
 fetch("https://raw.githubusercontent.com/Lukasz-Szumski/reservation/main/endpoints/destination.json")
 	.then(res => res.json()) // Transform the data into text res.text
+	.then(data => {
+		data.origin.forEach(element => {
+			const origin = document.getElementById("origin");
+			const option = document.createElement("option");
+			option.value = element.value;
+			console.log(element);
+			// console.log(option.value);
+			option.textContent = element.desc;
+			origin.appendChild(option);
+
+			// console.log(element);
+		});
+	})
 	.then(data => {
 		data.destination.forEach(element => {
 			const destination = document.getElementById("destination");
 			const option = document.createElement("option");
 			option.value = element.value;
-            console.log(element);
+			console.log(element);
 			// console.log(option.value);
 			option.textContent = element.desc;
 			destination.appendChild(option);
@@ -38,12 +48,3 @@ fetch("https://raw.githubusercontent.com/Lukasz-Szumski/reservation/main/endpoin
 		// console.log(data);
 	})
 	.catch(err => console.log(err));
-
-// function addOptions() {
-// 	const destination = document.getElementById("destination");
-//
-// 	option.value = "hand";
-// 	console.log(option.value);
-// 	option.text = "Hand";
-// 	x.add(option);
-// }
