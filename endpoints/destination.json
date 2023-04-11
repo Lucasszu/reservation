@@ -2,42 +2,57 @@
 	"destination": [
 		{
 			"id": 1,
-			"value": "waw",
+			"value": "WAW",
 			"desc": "Warszawa",
-			"code": "wrw"
+			"code": "WAW"
 		},
 		{
 			"id": 2,
-			"value": "paris",
-			"desc": "Paryż",
-			"code": "par"
+			"value": "LHR",
+			"desc": "Heathrow",
+			"code": "LHR"
 		},
 		{
 			"id": 3,
-			"value": "krk",
-			"desc": "Kraków",
-			"code": "krk"
+			"value": "LGA",
+			"desc": "New York",
+			"code": "LGA"
+		},
+		{
+			"id": 4,
+			"value": "ALC",
+			"desc": "Alicante",
+			"code": "ALC"
 		}
+		
+		
 	],
 
 	"origin": [
 		{
 			"id": 1,
-			"value": "krk",
-			"desc": "Kraków",
-			"code": "krk"
+			"value": "WRO",
+			"desc": "Wroclaw",
+			"code": "WRO"
 		},
 		{
 			"id": 2,
-			"value": "waw",
-			"desc": "Warszawa",
-			"code": "wrw"
+			"value": "KTW",
+			"desc": "Katowice",
+			"code": "KTW"
 		},
 		{
 			"id": 3,
-			"value": "wro",
-			"desc": "Wrocław",
-			"code": "wro"
+			"value": "POZ",
+			"desc": "Poznan",
+			"code": "POZ"
+		},
+		{
+			"id": 4,
+			"value": "WAW",
+			"desc": "Warszawa",
+			"code": "WAW"
 		}
+		
 	]
 }
