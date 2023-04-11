@@ -2,7 +2,7 @@
 	"destination": [
 		{
 			"id": 1,
-			"value": "warsaw",
+			"value": "waw",
 			"desc": "Warszawa",
 			"code": "wrw"
 		},
@@ -14,7 +14,7 @@
 		},
 		{
 			"id": 3,
-			"value": "krakow",
+			"value": "krk",
 			"desc": "Kraków",
 			"code": "krk"
 		}
@@ -23,19 +23,19 @@
 	"origin": [
 		{
 			"id": 1,
-			"value": "krakow",
+			"value": "krk",
 			"desc": "Kraków",
 			"code": "krk"
 		},
 		{
 			"id": 2,
-			"value": "warsaw",
+			"value": "waw",
 			"desc": "Warszawa",
 			"code": "wrw"
 		},
 		{
 			"id": 3,
-			"value": "wroclaw",
+			"value": "wro",
 			"desc": "Wrocław",
 			"code": "wro"
 		}
