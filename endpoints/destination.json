@@ -14,16 +14,28 @@
 		},
 		{
 			"id": 3,
-			"value": "LGA",
-			"desc": "New York",
-			"code": "LGA"
+			"value": "FRA",
+			"desc": "Frankfurt",
+			"code": "FRA"
 		},
 		{
 			"id": 4,
+			"value": "CDG",
+			"desc": "Paryz",
+			"code": "CDG"
+		},
+		{
+			"id": 5,
 			"value": "ALC",
 			"desc": "Alicante",
 			"code": "ALC"
-		}
+		},
+		{
+			"id": 6,
+			"value": "BCN",
+			"desc": "Barcelona",
+			"code": "BCN"
+		},
 		
 		
 	],
